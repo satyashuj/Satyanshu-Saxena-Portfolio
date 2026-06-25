@@ -302,6 +302,273 @@ font-size:18px;
 background:#1d4ed8;
 
 }
+    .btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+font-size:18px;
+
+}img{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}/* ==========================================
+   Large Desktop (1600px+)
+========================================== */
+
+@media (min-width:1600px){
+
+.container{
+width:1400px;
+margin:auto;
+}
+
+.hero h1{
+font-size:70px;
+}
+
+.title{
+font-size:50px;
+}
+
+}
+
+/* ==========================================
+   Laptop (1200px)
+========================================== */
+
+@media (max-width:1200px){
+
+.container{
+width:95%;
+}
+
+.projects,
+.skills,
+.gallery,
+.certificates,
+.qualification{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ==========================================
+   Tablet (992px)
+========================================== */
+
+@media (max-width:992px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero img{
+width:220px;
+height:220px;
+}
+
+.projects,
+.skills,
+.gallery,
+.certificates,
+.qualification{
+grid-template-columns:1fr;
+}
+
+.contact-container{
+flex-direction:column;
+}
+
+.contact-info,
+.contact-form{
+width:100%;
+}
+
+}
+
+/* ==========================================
+   Mobile (768px)
+========================================== */
+
+@media (max-width:768px){
+
+body{
+padding:0;
+overflow-x:hidden;
+}
+
+header{
+padding:15px;
+}
+
+.logo{
+font-size:28px;
+}
+
+nav ul{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.hero{
+padding:40px 20px;
+}
+
+.hero img{
+width:180px;
+height:180px;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.title{
+font-size:32px;
+}
+
+.card{
+padding:20px;
+}
+
+.card img{
+height:220px;
+}
+
+.btn,
+.project-btn{
+width:100%;
+text-align:center;
+}
+
+input,
+textarea{
+width:100%;
+font-size:16px;
+}
+
+table{
+display:block;
+overflow-x:auto;
+}
+
+}
+
+/* ==========================================
+   Small Mobile (480px)
+========================================== */
+
+@media (max-width:480px){
+
+.logo{
+font-size:22px;
+}
+
+.hero img{
+width:150px;
+height:150px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero h2{
+font-size:18px;
+}
+
+.hero p{
+font-size:15px;
+}
+
+.title{
+font-size:28px;
+}
+
+.card{
+padding:15px;
+}
+
+.card img{
+height:180px;
+}
+
+.contact{
+padding:15px;
+}
+
+footer{
+font-size:14px;
+padding:20px;
+}
+
+}
+
+/* ==========================================
+   Extra Small Device (360px)
+========================================== */
+
+@media (max-width:360px){
+
+.hero h1{
+font-size:24px;
+}
+
+.hero img{
+width:130px;
+height:130px;
+}
+
+.title{
+font-size:24px;
+}
+
+.card h3{
+font-size:18px;
+}
+
+.card p{
+font-size:14px;
+}
+
+.btn{
+font-size:14px;
+padding:12px;
+}
+
+}
 
 </style>
 
