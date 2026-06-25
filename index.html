@@ -1,0 +1,1201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><h1>Satyanshu Saxena | Portfolio</h1></title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#1e293b;
+}
+
+/* Header */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+padding:15px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#2563eb;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#1e293b;
+font-weight:600;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#2563eb;
+}
+
+/* Hero */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(
+135deg,
+#dbeafe,
+#bfdbfe,
+#eff6ff
+);
+padding:20px;
+}
+
+.hero img{
+width:200px;
+height:200px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #2563eb;
+box-shadow:0 0 25px rgba(37,99,235,0.4);
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.hero h2{
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:14px 35px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:50px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
+}
+
+/* Sections */
+
+section{
+padding:100px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+color:#2563eb;
+margin-bottom:40px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:1.8;
+}
+
+/* Skills */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-8px);
+}
+
+/* Projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:#2563eb;
+margin-bottom:10px;
+}
+
+/* Contact */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+font-size:18px;
+margin:12px;
+}
+
+/* Footer */
+
+footer{
+background:#2563eb;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+/* Scroll Button */
+
+#topBtn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#2563eb;
+color:white;
+border:none;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+display:none;
+font-size:18px;
+}
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.card{
+padding:35px 25px;
+border-radius:20px;
+text-align:center;
+transition:0.4s;
+color:#333;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Card 1 */
+
+.card1{
+background:#fff7ed;
+border:2px solid #fb923c;
+}
+
+.card1 h3{
+color:#ea580c;
+}
+
+/* Card 2 */
+
+.card2{
+background:#f0fdf4;
+border:2px solid #4ade80;
+}
+
+.card2 h3{
+color:#16a34a;
+}
+
+/* Card 3 */
+
+.card3{
+background:#eff6ff;
+border:2px solid #60a5fa;
+}
+
+.card3 h3{
+color:#2563eb;
+}
+
+/* Card 4 */
+
+.card4{
+background:#faf5ff;
+border:2px solid #c084fc;
+}
+
+.card4 h3{
+color:#9333ea;
+}
+
+.project-btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+border-radius:10px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn1{
+background:#f97316;
+}
+
+.btn2{
+background:#22c55e;
+}
+
+.btn3{
+background:#3b82f6;
+}
+
+.btn4{
+background:#a855f7;
+}
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill{
+padding:20px;
+border-radius:15px;
+text-align:center;
+font-weight:bold;
+font-size:18px;
+transition:0.4s;
+cursor:pointer;
+}
+
+.skill:hover{
+transform:translateY(-8px) scale(1.05);
+}
+
+/* Individual Colors */
+
+.java{
+background:#fff7ed;
+color:#ea580c;
+border:2px solid #fb923c;
+}
+
+.jsp{
+background:#eff6ff;
+color:#2563eb;
+border:2px solid #60a5fa;
+}
+
+.servlet{
+background:#f0fdf4;
+color:#16a34a;
+border:2px solid #4ade80;
+}
+
+.jdbc{
+background:#faf5ff;
+color:#9333ea;
+border:2px solid #c084fc;
+}
+
+.mysql{
+background:#fefce8;
+color:#ca8a04;
+border:2px solid #facc15;
+}
+
+.html{
+background:#fff1f2;
+color:#e11d48;
+border:2px solid #fb7185;
+}
+
+.css{
+background:#ecfeff;
+color:#0891b2;
+border:2px solid #22d3ee;
+}
+
+.js{
+background:#fffbeb;
+color:#d97706;
+border:2px solid #fbbf24;
+}
+
+.git{
+background:#f5f3ff;
+color:#7c3aed;
+border:2px solid #a78bfa;
+}
+
+.bootstrap{
+background:#f3e8ff;
+color:#9333ea;
+border:2px solid #c084fc;
+}
+.about{
+max-width:900px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+text-align:center;
+border-top:5px solid #2563eb;
+}
+
+.about h3{
+font-size:28px;
+margin-bottom:15px;
+color:#2563eb;
+}
+
+.about p{
+font-size:18px;
+line-height:1.8;
+color:#475569;
+}
+.skill{
+padding:20px;
+border-radius:15px;
+font-size:18px;
+font-weight:600;
+text-align:center;
+transition:.4s;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.skill:hover{
+transform:translateY(-8px) scale(1.05);
+}
+/* Swing AI Assistant */
+
+.card6{
+background:#f0f9ff;
+border:2px solid #0ea5e9;
+}
+
+.card6 h3{
+color:#0284c7;
+}
+
+.btn6{
+background:#0284c7;
+}
+
+.btn6:hover{
+background:#0369a1;
+}     
+/* Java */
+.java{
+background:#fff7ed;
+color:#ea580c;
+border:2px solid #fb923c;
+}
+
+/* Swing */
+.swing{
+background:#eff6ff;
+color:#2563eb;
+border:2px solid #60a5fa;
+}
+
+/* JSP */
+.jsp{
+background:#f0fdf4;
+color:#16a34a;
+border:2px solid #4ade80;
+}
+
+/* Servlet */
+.servlet{
+background:#faf5ff;
+color:#9333ea;
+border:2px solid #c084fc;
+}
+
+/* JDBC */
+.jdbc{
+background:#fefce8;
+color:#ca8a04;
+border:2px solid #facc15;
+}
+
+/* Spring */
+.spring{
+background:#ecfccb;
+color:#4d7c0f;
+border:2px solid #84cc16;
+}
+
+/* Spring Boot */
+.springboot{
+background:#dcfce7;
+color:#15803d;
+border:2px solid #22c55e;
+}
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:140px 20px 80px;
+background:#dbeafe;
+}
+/* MSSQL */
+.mssql{
+background:#fee2e2;
+color:#dc2626;
+border:2px solid #f87171;
+}
+
+/* HTML */
+.html{
+background:#ffedd5;
+color:#ea580c;
+border:2px solid #fb923c;
+}
+/* Projects */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Image Size */
+
+.card img{
+width:100%;
+height:220px;      /* Change as needed */
+object-fit:cover;
+display:block;
+}
+
+/* Card Content */
+
+.card h3{
+padding:20px 20px 10px;
+font-size:24px;
+}
+
+.card p{
+padding:0 20px;
+line-height:1.7;
+color:#555;
+min-height:90px;
+}
+
+.project-btn{
+display:block;
+margin:20px;
+padding:12px;
+text-align:center;
+text-decoration:none;
+color:#fff;
+border-radius:10px;
+font-weight:bold;
+}
+.card img{
+width:100%;
+height:300px;
+object-fit:cover;
+}
+
+/* CSS */
+.css{
+background:#cffafe;
+color:#0891b2;
+border:2px solid #22d3ee;
+}
+
+/* JavaScript */
+.js{
+background:#fef9c3;
+color:#ca8a04;
+border:2px solid #facc15;
+}
+
+/* Git */
+.git{
+background:#f3e8ff;
+color:#7e22ce;
+border:2px solid #c084fc;
+}
+
+/* Bootstrap */
+.bootstrap{
+background:#ede9fe;
+color:#6d28d9;
+border:2px solid #a78bfa;
+}
+
+/* C */
+.clang{
+background:#dbeafe;
+color:#1d4ed8;
+border:2px solid #60a5fa;
+}
+
+/* Python */
+.python{
+background:#dcfce7;
+color:#166534;
+border:2px solid #4ade80;
+}
+
+/* Data Analysis */
+.dataanalysis{
+background:#fce7f3;
+color:#be185d;
+border:2px solid #f472b6;
+}
+
+/* .NET */
+.dotnet{
+background:#e0e7ff;
+color:#4338ca;
+border:2px solid #818cf8;
+}
+.highlight{
+color:#2563eb;
+font-weight:bold;
+}
+/* Responsive */
+
+/* Contact */
+
+.contact-container{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:start;
+}
+
+.contact-info{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-info h3{
+color:#2563eb;
+margin-bottom:15px;
+}
+
+.contact-info p{
+margin-bottom:25px;
+color:#555;
+}
+
+.info-card{
+display:flex;
+align-items:center;
+gap:20px;
+padding:18px;
+margin-bottom:15px;
+border-radius:15px;
+background:#f8fafc;
+transition:.3s;
+}
+
+.info-card:hover{
+background:#dbeafe;
+}
+
+.info-card span{
+font-size:30px;
+}
+
+.info-card h4{
+margin-bottom:5px;
+}
+
+.info-card a{
+text-decoration:none;
+color:#2563eb;
+}
+
+.contact-form{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-form h3{
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.contact-form input,
+.contact-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:18px;
+border:1px solid #cbd5e1;
+border-radius:10px;
+font-size:16px;
+outline:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+border:2px solid #2563eb;
+}
+.project-btn{
+display:block;
+margin:20px;
+margin-top:auto;
+padding:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+border-radius:10px;
+font-weight:bold;
+}/* Hospital Card */
+
+.card5{
+background:#ecfeff;
+border:2px solid #06b6d4;
+}
+
+.card5 h3{
+color:#0891b2;
+}
+
+.btn5{
+background:#0891b2;
+}
+
+.btn5:hover{
+background:#0e7490;
+}
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+transition:.4s;
+
+display:flex;
+flex-direction:column;
+}
+.contact-form button{
+width:100%;
+padding:15px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact-form button:hover{
+background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+}
+
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:15px;
+}
+
+nav ul{
+margin-top:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.title{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Satyanshu Saxena</div>
+
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="personaldetails.html">Personal Details</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="certificates.html">Certificates</a></li>
+<li><a href="qualification.html">Qualification</a></li>
+
+  </ul>
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<div>
+
+<img src="profile.jpg" alt="Profile">
+
+<h1>Satyanshu Saxena</h1>
+
+<h2 id="typing"></h2>
+
+<p>
+Java Full Stack Developer | Web Developer
+</p>
+
+<a href="SATYANHU SAXENA.pdf" class="btn" download>
+Download Resume
+</a>
+<div class="social">
+
+<a href="https://github.com/satyashuj" target="_blank">🐙 GitHub</a>
+
+<a href="https://www.linkedin.com/in/satyanshu-saxena-183219338/" target="_blank">💼 LinkedIn</a>
+
+<a href="mailto:satyanshusaxena1481@gmail.com">📧 Email</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill git">💻 MS-Office</div>
+
+<div class="skill java">☕ Java</div>
+
+<div class="skill swing">🖥️ Java Swing</div>
+
+<div class="skill jsp">📄 JSP</div>
+
+<div class="skill servlet">⚙️ Servlet</div>
+
+<div class="skill jdbc">🔌 JDBC</div>
+
+<div class="skill spring">🌱 Spring</div>
+
+<div class="skill springboot">🚀 Spring Boot</div>
+
+<div class="skill mssql">🗄️ MS SQL Server</div>
+
+<div class="skill html">🌐 HTML5</div>
+
+<div class="skill css">🎨 CSS3</div>
+
+<div class="skill js">✨ JavaScript</div>
+
+<div class="skill git">💻 Git & GitHub</div>
+
+<div class="skill bootstrap">🅱️ Bootstrap</div>
+
+<div class="skill clang">⚡ C Language</div>
+
+<div class="skill python">🐍 Python</div>
+
+<div class="skill dataanalysis">📊 Data Analysis</div>
+
+<div class="skill dotnet">🔷 .NET C#</div>
+<div class="skill dotnet">🔷 BASIC COMPUTER KNOWLEDGE</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<!-- Smart City -->
+
+<div class="card card1">
+
+<img src="smartcity.jpg" alt="Smart City Portal">
+
+<h3>🏙 Smart City Portal</h3>
+
+<p>
+A web-based portal for complaint management, bill payment, government schemes, and citizen services.
+</p>
+
+<a href="projects/smartcity.html" class="project-btn btn1">
+View Details →
+</a>
+
+</div>
+
+<!-- Hospital Management System -->
+
+<div class="card card5">
+
+<img src="hospital.jpg" alt="Hospital Management System">
+
+<h3>🏥 Hospital Management System</h3>
+
+<p>
+Java Swing application for managing patients, doctors, appointments, billing and hospital records through a user-friendly interface.
+</p>
+<a href="projects/hospital.html" class="project-btn btn5">
+View Details →
+</a>
+</div>
+
+<!-- Swing AI Assistant -->
+
+<div class="card card6">
+
+<img src="aiassistant.jpg" alt="Swing AI Assistant">
+
+<h3>🤖 Swing AI Assistant</h3>
+
+<p>
+An intelligent desktop application developed using Java Swing that integrates AI-powered chat, voice input, text-to-speech, image analysis, PDF reader, OCR and file management features.
+</p>
+
+<a href="projects/aiassistant.html" class="project-btn btn6">
+View Details →
+</a>
+
+</div>
+
+<!-- Voting -->
+
+<div class="card card3">
+
+<img src="voting.jpg" alt="Online Voting">
+
+<h3>🗳 ECI Online Voting System</h3>
+
+<p>
+Secure online voting portal with Admin, Voter Registration, Candidate Management and Result System.
+</p>
+
+<a href="projects/voting.html" class="project-btn btn3">
+View Details →
+</a>
+</div>
+
+
+</DIV>
+</div>
+
+</section>
+
+
+<!-- About -->
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<h3>👨‍💻 Satyanshu Saxena</h3>
+
+<p>
+
+I am a passionate
+<span class="highlight">Java Full Stack Developer</span>
+from Uttar Pradesh, India.
+
+I specialize in
+<span class="highlight">Java, JSP, Servlets, JDBC,Spring, Spring Boot, MS-SQL, HTML, CSS and JavaScript</span>
+for building modern web and desktop applications.
+
+I enjoy developing real-world projects such as
+<span class="highlight">Smart City Portal, Swing AI Assistant, Hospital Management System, ECI Online Voting System </span>.
+
+My goal is to continuously improve my technical skills and contribute to innovative software solutions.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Contact Section -->
+
+<section id="contact">
+
+<h2 class="title">Contact Me</h2>
+
+<div class="contact-container">
+
+<!-- Left Side -->
+
+<div class="contact-info">
+
+<h3>Get In Touch</h3>
+
+<p>
+Feel free to contact me for jobs, internships, freelance work or collaborations.
+</p>
+
+<div class="info-card">
+
+<span>📧</span>
+
+<div>
+<h4>Email</h4>
+<a href="mailto:satyanshusaxena1481@gmail.com">
+satyanshusaxena1481@gmail.com
+</a>
+</div>
+
+</div>
+
+<div class="info-card">
+
+<span>📱</span>
+
+<div>
+<h4>Phone</h4>
+<a href="tel:+916394745461">
++91 6394745461
+</a>
+</div>
+
+</div>
+
+<div class="info-card">
+
+<span>📍</span>
+
+<div>
+<h4>Location</h4>
+Kanpur Dehat, Uttar Pradesh
+</div>
+
+</div>
+
+<div class="info-card">
+
+<span>💻</span>
+
+<div>
+<h4>GitHub</h4>
+<a href="https://github.com/satyashuj" target="_blank">
+github.com/satyashuj
+</a>
+</div>
+
+</div>
+
+<div class="info-card">
+
+<span>🔗</span>
+
+<div>
+<h4>LinkedIn</h4>
+<a href="https://www.linkedin.com/in/satyanshu-saxena-183219338/" target="_blank">
+linkedin.com/in/satyanshu-saxena-183219338/
+</a>
+</div>
+
+</div>
+
+</div>
+
+<!-- Right Side -->
+
+<div class="contact-form">
+
+<h3>Send Me a Message</h3>
+
+<form action="https://formsubmit.co/satyanshusaxena1481@gmail.com" method="POST">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="email" name="email" placeholder="Your Email" required>
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+<textarea name="message" rows="6" placeholder="Write Your Message..." required></textarea>
+
+<button type="submit">
+📨 Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<h3>Satyanshu Saxena</h3>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script>
+
+const text="Java Full Stack Developer";
+
+let i=0;
+
+function typeWriter(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typeWriter,100);
+
+}
+
+}
+
+typeWriter();
+
+let topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+};
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
+};
+
+</script>
+
+</body>
+</html>
+

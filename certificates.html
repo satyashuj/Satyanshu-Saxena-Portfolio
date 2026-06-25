@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="icon" type="image/png" href="favicon.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Certificates | Satyanshu Saxena</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f8fafc;
+padding:50px;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+color:#2563eb;
+margin-bottom:40px;
+}
+
+.certificates{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.card p{
+line-height:1.7;
+color:#475569;
+}
+
+.java{
+border-left:6px solid #f97316;
+}
+
+.web{
+border-left:6px solid #3b82f6;
+}
+
+.python{
+border-left:6px solid #22c55e;
+}
+
+.database{
+border-left:6px solid #a855f7;
+}
+
+.internship{
+border-left:6px solid #ec4899;
+}
+
+.training{
+border-left:6px solid #eab308;
+}
+
+.badge{
+display:inline-block;
+margin-top:15px;
+padding:8px 15px;
+background:#2563eb;
+color:white;
+border-radius:20px;
+font-size:14px;
+}
+.training{
+background:#fff7ed;
+border-left:6px solid #f97316;
+}
+
+.internship{
+background:#eff6ff;
+border-left:6px solid #2563eb;
+}
+
+.apprentice{
+background:#f0fdf4;
+border-left:6px solid #22c55e;
+}
+
+.fullstack{
+background:#faf5ff;
+border-left:6px solid #9333ea;
+}
+
+.company{
+background:#fefce8;
+border-left:6px solid #ca8a04;
+}
+.nse{
+background:#eefbf3;
+border-left:6px solid #00a651;
+}
+
+.nse h3{
+color:#00a651;
+}
+.back{
+display:block;
+width:220px;
+margin:50px auto;
+text-align:center;
+padding:12px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+.certificate-header{
+background:linear-gradient(135deg,#f59e0b,#f97316);
+color:white;
+padding:50px;
+border-radius:25px;
+text-align:center;
+margin-bottom:50px;
+box-shadow:0 10px 25px rgba(249,115,22,0.3);
+}
+
+.certificate-header h1{
+font-size:55px;
+margin-bottom:10px;
+}
+.certificates{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:15px;
+}
+.back{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+
+width:260px;
+margin:60px auto;
+
+padding:16px 25px;
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+color:#fff;
+
+text-decoration:none;
+
+font-size:22px;
+
+font-weight:700;
+
+border-radius:50px;
+
+box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+transition:.35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* Shine Effect */
+
+.back::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:80%;
+height:100%;
+
+background:rgba(255,255,255,.35);
+
+transform:skewX(-30deg);
+
+transition:.7s;
+
+}
+
+.back:hover::before{
+
+left:130%;
+
+}
+
+/* Hover */
+
+.back:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+box-shadow:0 15px 35px rgba(37,99,235,.45);
+
+background:linear-gradient(135deg,#1d4ed8,#4338ca);
+
+}
+
+/* Click Animation */
+
+.back:active{
+
+transform:scale(.94);
+
+animation:blink .3s;
+
+}
+
+/* Icon */
+
+.back span{
+
+font-size:26px;
+
+animation:move 2s infinite;
+
+}
+
+/* Icon Animation */
+
+@keyframes move{
+
+0%{transform:translateX(0);}
+50%{transform:translateX(-6px);}
+100%{transform:translateX(0);}
+
+}
+
+/* Blink */
+
+@keyframes blink{
+
+0%{opacity:1;}
+
+50%{opacity:.4;}
+
+100%{opacity:1;}
+
+}
+.card p{
+margin:8px 0;
+line-height:1.6;
+}
+
+@media(max-width:768px){
+
+body{
+padding:20px;
+}
+
+.certificate-header h1{
+font-size:35px;
+}
+
+}
+.certificate-header p{
+font-size:18px;
+opacity:.95;
+}
+.back:hover{
+background:#1d4ed8;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="certificate-header">
+
+<h1>🏆 My Certificates</h1>
+
+<p>
+Professional Certifications, Internships & Training Programs
+</p>
+
+</div>
+
+<div class="certificates">
+
+
+
+<!-- Java -->
+
+<div class="card java">
+
+<h3>☕ Java Technology</h3>
+
+<p>
+Successfully completed Java Technology Training Program.
+</p>
+
+<p><strong>Institute:</strong> BTPS Kanpur</p>
+
+<p><strong>Duration:</strong> 6 Months</p>
+
+<p><strong>Year:</strong> 2026</p>
+
+<span class="badge">Certified</span>
+
+</div>
+
+
+
+<!-- Python -->
+
+<div class="card python">
+
+<h3>🐍 Python Technology</h3>
+
+<p>
+Certification in Python Programming and Problem Solving.
+</p>
+
+<p><strong>Institute:</strong> BTPS Kanpur</p>
+
+<p><strong>Year:</strong> 2026</p>
+
+<span class="badge">Certified</span>
+
+</div>
+
+<!-- Database -->
+
+<div class="card database">
+
+<h3>🗄 Microsoft SQL Server</h3>
+
+<p>
+Database Design, SQL Queries and Database Management.
+</p>
+
+<p><strong>Institute:</strong> BTPS Kanpur</p>
+
+<p><strong>Year:</strong> 2026</p>
+
+<span class="badge">Certified</span>
+
+</div>
+
+<!-- NSE -->
+
+<div class="card nse">
+
+<h3>📈 National Stock Exchange Internship</h3>
+
+<p>
+Successfully completed Frontline Operations Trainee Internship at
+National Stock Exchange of India Limited (NSE).
+</p>
+
+<p><strong>Organization:</strong> National Stock Exchange of India Ltd.</p>
+
+<p><strong>Location:</strong> Ludhiana, Punjab</p>
+
+<p><strong>Position:</strong> Frontline Operations Trainee</p>
+
+<p><strong>Duration:</strong> 1 Year</p>
+
+<p><strong>Domain:</strong> Financial Markets & Stock Exchange Operations</p>
+
+<p><strong>Year:</strong> 2024 - 2025</p>
+
+<span class="badge">Completed</span>
+
+</div>
+
+<!-- Web Development -->
+
+<div class="card web">
+
+<h3>🌐 Web Development & C Language</h3>
+
+<p>
+Completed HTML, CSS, JavaScript, Responsive Design and C Programming Training.
+</p>
+
+<p><strong>Institute:</strong> BTPS Kanpur</p>
+
+<p><strong>Duration:</strong> 6 Months</p>
+
+<p><strong>Year:</strong> 2026</p>
+
+<span class="badge">Certified</span>
+
+</div>
+<!-- Summer Training -->
+
+<div class="card training">
+
+<h3>🏭 Summer Training</h3>
+
+<p>
+Successfully completed 6 Weeks Summer Training Program.
+</p>
+
+<p><strong>Institute:</strong> BTPS Kanpur</p>
+
+<p><strong>Duration:</strong> 6 Weeks</p>
+
+<p><strong>Year:</strong> 2024</p>
+
+<span class="badge">Completed</span>
+
+</div>
+
+</div>
+
+<a href="index.html" class="back">
+    <span>🏠</span>
+    Back To Home
+</a>
+</body>
+
+</html> 

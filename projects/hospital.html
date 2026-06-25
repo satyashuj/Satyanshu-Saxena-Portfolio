@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hospital Management System</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f8fafc;
+}
+
+.header{
+background:linear-gradient(135deg,#0891b2,#06b6d4);
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.container{
+max-width:1200px;
+margin:40px auto;
+padding:35px;
+background:white;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.container img{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:30px;
+}
+
+h2{
+color:#0891b2;
+margin:25px 0 15px;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+color:#555;
+}
+
+ul{
+margin-left:25px;
+}
+
+ul li{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.tech{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+}
+
+.tech span{
+background:#0891b2;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:14px 30px;
+background:#0891b2;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+transition:.3s;
+}
+.premium-btn{
+
+position:relative;
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:18px;
+
+width:360px;
+height:80px;
+
+margin:70px auto;
+
+text-decoration:none;
+
+color:#fff;
+
+font-size:22px;
+font-weight:700;
+
+background:linear-gradient(135deg,#2563eb,#7c3aed,#06b6d4);
+
+background-size:300% 300%;
+
+border-radius:60px;
+
+overflow:hidden;
+
+box-shadow:
+0 15px 35px rgba(37,99,235,.35);
+
+animation:bgMove 6s linear infinite;
+
+transition:.4s;
+
+}
+
+/* Glass Layer */
+
+.premium-btn::before{
+
+content:"";
+
+position:absolute;
+
+inset:2px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+border-radius:60px;
+
+z-index:0;
+
+}
+
+/* Shine */
+
+.premium-btn::after{
+
+content:"";
+
+position:absolute;
+
+top:-40px;
+left:-120px;
+
+width:90px;
+height:180px;
+
+background:rgba(255,255,255,.4);
+
+transform:rotate(30deg);
+
+transition:.8s;
+
+}
+
+.premium-btn:hover::after{
+
+left:420px;
+
+}
+
+/* Content */
+
+.icon,
+.text,
+.arrow,
+.pulse{
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* Icon */
+
+.icon{
+
+font-size:30px;
+
+transition:.4s;
+
+}
+
+/* Pulse Circle */
+
+.pulse{
+
+width:12px;
+height:12px;
+
+background:#22c55e;
+
+border-radius:50%;
+
+box-shadow:
+0 0 0 rgba(34,197,94,.7);
+
+animation:pulse 1.5s infinite;
+
+}
+
+/* Arrow */
+
+.arrow{
+
+font-size:28px;
+
+transition:.4s;
+
+}
+
+/* Hover */
+
+.premium-btn:hover{
+
+transform:translateY(-8px) scale(1.04);
+
+box-shadow:
+0 25px 50px rgba(37,99,235,.45);
+
+}
+
+.premium-btn:hover .icon{
+
+transform:rotate(-20deg) scale(1.2);
+
+}
+
+.premium-btn:hover .arrow{
+
+transform:translateX(10px);
+
+}
+
+/* Background Animation */
+
+@keyframes bgMove{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* Pulse */
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(34,197,94,.7);
+
+}
+
+70%{
+
+box-shadow:0 0 0 15px rgba(34,197,94,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(34,197,94,0);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.premium-btn{
+
+width:290px;
+
+height:65px;
+
+font-size:18px;
+
+}
+
+.icon{
+
+font-size:24px;
+
+}
+
+.arrow{
+
+font-size:22px;
+
+}
+
+}
+.btn:hover{
+background:#0e7490;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>🏥 Hospital Management System</h1>
+
+<p>Java Swing Desktop Application</p>
+
+</div>
+
+<div class="container">
+
+<img src="../hospital.jpg" alt="Hospital Management System">
+
+<h2>📌 Project Overview</h2>
+
+<p>
+
+Hospital Management System is a Java Swing desktop application designed to manage daily hospital operations. It provides an easy-to-use interface for handling patient records, doctor information, appointments, billing, prescriptions and medical reports.
+
+</p>
+
+<h2>✨ Key Features</h2>
+
+<ul>
+
+<li>👨‍⚕️ Doctor Management</li>
+
+<li>🧑‍🤝‍🧑 Patient Registration</li>
+
+<li>📅 Appointment Scheduling</li>
+
+<li>💊 Prescription Management</li>
+
+<li>🛏️ Ward & Room Management</li>
+
+<li>🧾 Billing & Payment System</li>
+
+<li>📋 Medical History Records</li>
+
+<li>🔍 Search Patient Details</li>
+
+<li>📈 Hospital Reports</li>
+
+<li>🔐 Admin Login</li>
+
+</ul>
+
+<h2>💻 Technologies Used</h2>
+
+<div class="tech">
+
+<span>Java</span>
+
+<span>Java Swing</span>
+
+<span>JDBC</span>
+
+<span>Ms-SQL</span>
+
+<span>NetBeans</span>
+
+<span>OOP</span>
+
+<span>AWT</span>
+
+</div>
+
+<h2>🗄 Database Tables</h2>
+
+<ul>
+
+<li>Patients</li>
+
+<li>Doctors</li>
+
+<li>Appointments</li>
+
+<li>Departments</li>
+
+<li>Billing</li>
+
+<li>Medicines</li>
+
+<li>Users</li>
+
+</ul>
+
+<h2>🎯 Project Objective</h2>
+
+<p>
+
+The objective of this project is to automate hospital operations by providing a secure desktop application that efficiently manages patients, doctors, appointments, billing and hospital records, reducing paperwork and improving healthcare services.
+
+</p>
+
+<h2>👨‍💻 Developed By</h2>
+
+<p>
+
+<strong>Satyanshu Saxena</strong><br>
+
+Java Full Stack Developer
+
+</p>
+
+<a href="../index.html" class="premium-btn">
+
+<div class="pulse"></div>
+
+<span class="icon">🏠</span>
+
+<span class="text">
+Back To Portfolio
+</span>
+
+<span class="arrow">➜</span>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

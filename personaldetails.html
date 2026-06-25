@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personal Details | Satyanshu Saxena</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#eef5ff;
+padding:40px;
+}
+
+.header{
+
+max-width:1100px;
+
+margin:auto;
+
+padding:40px;
+
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+color:white;
+
+text-align:center;
+
+border-radius:20px;
+
+margin-bottom:40px;
+
+}
+
+.header h1{
+
+font-size:50px;
+
+}
+
+.details{
+
+max-width:900px;
+
+margin:auto;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+td{
+
+padding:18px;
+
+border-bottom:1px solid #ddd;
+
+font-size:18px;
+
+}
+
+td:first-child{
+
+font-weight:bold;
+
+color:#2563eb;
+
+width:35%;
+
+}
+
+tr:hover{
+
+background:#f8fafc;
+
+}
+
+.back{
+
+display:block;
+
+width:250px;
+
+margin:40px auto;
+
+text-align:center;
+
+padding:15px;
+
+background:#2563eb;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:12px;
+
+font-size:20px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+.back{
+
+position:relative;
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:16px;
+
+width:340px;
+height:75px;
+
+margin:60px auto;
+
+text-decoration:none;
+
+font-size:22px;
+font-weight:700;
+
+color:white;
+
+border-radius:60px;
+
+background:linear-gradient(
+135deg,
+#2563eb,
+#7c3aed,
+#06b6d4,
+#22c55e,
+#f97316,
+#ec4899
+);
+
+background-size:500% 500%;
+
+animation:gradient 8s linear infinite;
+
+box-shadow:
+0 15px 40px rgba(37,99,235,.35);
+
+overflow:hidden;
+
+transition:.45s;
+
+}
+
+/* Glass */
+
+.back::before{
+
+content:"";
+
+position:absolute;
+
+inset:2px;
+
+border-radius:60px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+}
+.profile{
+
+text-align:center;
+
+margin:20px auto 50px;
+
+}
+
+.profile img{
+
+width:220px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+outline:6px solid #2563eb;
+
+box-shadow:
+0 15px 40px rgba(37,99,235,.35);
+
+transition:.4s;
+
+}
+
+.profile img:hover{
+
+transform:scale(1.06) rotate(-2deg);
+
+box-shadow:
+0 25px 60px rgba(37,99,235,.45);
+
+}
+
+.profile h2{
+
+margin-top:20px;
+
+font-size:34px;
+
+color:#1e3a8a;
+
+}
+
+.profile p{
+
+margin-top:8px;
+
+font-size:20px;
+
+font-weight:600;
+
+color:#2563eb;
+
+}
+/* Shine */
+
+.back::after{
+
+content:"";
+
+position:absolute;
+
+width:80px;
+height:220px;
+
+background:rgba(255,255,255,.45);
+
+top:-60px;
+left:-120px;
+
+transform:rotate(30deg);
+
+transition:1s;
+
+}
+
+.back:hover::after{
+
+left:420px;
+
+}
+
+/* Content */
+
+.home,
+.text,
+.arrow{
+
+position:relative;
+
+z-index:10;
+
+}
+
+/* Home */
+
+.home{
+
+width:48px;
+height:48px;
+
+border-radius:50%;
+
+background:white;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:24px;
+
+color:#2563eb;
+
+transition:.4s;
+
+}
+
+/* Arrow */
+
+.arrow{
+
+font-size:28px;
+
+transition:.4s;
+
+}
+
+/* Hover */
+
+.back:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+box-shadow:
+0 25px 60px rgba(37,99,235,.45),
+0 0 40px rgba(124,58,237,.35);
+
+}
+
+.back:hover .home{
+
+transform:rotate(360deg);
+
+}
+
+.back:hover .arrow{
+
+transform:translateX(10px);
+
+}
+
+/* Click */
+
+.back:active{
+
+transform:scale(.95);
+
+}
+
+/* Gradient Animation */
+
+@keyframes gradient{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.back{
+
+width:270px;
+height:60px;
+
+font-size:18px;
+
+}
+
+.home{
+
+width:40px;
+height:40px;
+
+font-size:20px;
+
+}
+
+.arrow{
+
+font-size:22px;
+
+}
+
+}
+
+.back:hover{
+
+background:#1d4ed8;
+
+transform:translateY(-5px);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>👤 Personal Details</h1>
+
+<p>Basic Information</p>
+
+</div>
+
+<div class="details">
+<div class="profile">
+    <img src="profile.jpg" alt="Satyanshu Saxena">
+    <h2>Satyanshu Saxena</h2>
+    <p>Java Full Stack Developer</p>
+</div>
+<table>
+<tr>
+
+<td>👤 Full Name</td>
+
+<td>Satyanshu Saxena</td>
+
+</tr>
+
+<tr>
+
+<td>👨 Father's Name</td>
+
+<td>Deepak Saxena</td>
+
+</tr>
+
+<tr>
+
+<td>🎂 Date of Birth</td>
+
+<td>16-April-2001</td>
+
+</tr>
+
+<tr>
+
+<td>🚹 Gender</td>
+
+<td>Male</td>
+
+</tr>
+
+<tr>
+
+<td>🇮🇳 Nationality</td>
+
+<td>Indian</td>
+
+</tr>
+
+<tr>
+
+<td>💍 Marital Status</td>
+
+<td>Single</td>
+
+</tr>
+<tr>
+
+<td>🗣️ Languages Known</td>
+
+<td>Hindi, English</td>
+
+</tr>
+
+<tr>
+
+<td>📍 Address</td>
+
+<td>
+E-141H UPSIDC, Nabipur, Nagin Jasi, Jainpur IA,<br>
+District Kanpur Dehat, Uttar Pradesh, India
+</td>
+
+</tr>
+
+<tr>
+
+<td>📧 Email</td>
+
+<td>
+<a href="mailto:satyanshusaxena1481@gmail.com">
+satyanshusaxena1481@gmail.com
+</a>
+</td>
+
+</tr>
+<tr>
+<td>💼 Profession</td>
+<td>Java Full Stack Developer</td>
+</tr>
+
+<tr>
+<td>🎓 Highest Qualification</td>
+<td>PGDCA, B.Sc</td>
+</tr>
+
+<tr>
+<td>💻 Technical Skills</td>
+<td>Java, Swing, Spring Boot, JSP, Servlet, JDBC, Ms-SQL, HTML, CSS, JavaScript, Git, GitHub</td>
+</tr>
+
+<tr>
+<td>🌍 Current Location</td>
+<td>Kanpur Dehat, Uttar Pradesh, India</td>
+</tr>
+
+<tr>
+<td>📍 Preferred Work Location</td>
+<td>Noida, Lucknow, Kanpur, Delhi NCR, Bengaluru</td>
+</tr>
+
+
+<tr>
+<td>🎯 Career Objective</td>
+<td>Seeking an opportunity as a Java Full Stack Developer where I can apply my technical skills to build scalable software solutions and continuously enhance my expertise.</td>
+</tr>
+
+<tr>
+<td>⭐ Strengths</td>
+<td>Quick Learner, Team Player, Problem Solving, Self Motivated, Time Management</td>
+</tr>
+
+<tr>
+<td>🎨 Hobbies</td>
+<td>Coding, AI Applications, Web Development, Learning New Technologies, Stock Market Learning</td>
+</tr>
+
+<tr>
+<td>🏆 Experience</td>
+<td>Summer Training, Internship, Apprenticeship Training</td>
+</tr>
+
+<tr>
+<td>📜 Certifications</td>
+<td>Java, AI for All, Generative AI, Cybersecurity Awareness, SEBI Investor Certification, NISM, NSE Certifications</td>
+</tr>
+<tr>
+
+<td>📱 Mobile</td>
+
+<td>+91 6394745461</td>
+
+</tr>
+
+<tr>
+<td>🎨 Hobbies</td>
+<td>
+💻 Coding & Software Development<br>
+📚 Learning New Technologies<br>
+🤖 Exploring Artificial Intelligence<br>
+🌐 Building Web Applications<br>
+📈 Learning Stock Market & Finance<br>
+🎓 Participating in Technical Workshops & Seminars
+<h4>
+<p>
+  Computer Work, Programming, and Technology Enthusiast. Always eager to learn and explore new advancements in the tech world.
+</p>
+</h4>
+
+</td>
+</tr>
+
+<tr>
+
+<td>🌐 LinkedIn</td>
+<td>
+<a href="https://www.linkedin.com/in/satyanshu-saxena-183219338/" target="_blank">
+View Profile
+</a>
+</td>
+
+</tr>
+
+<tr>
+
+<td>🐙 GitHub</td>
+
+<td>
+<a href="https://github.com/satyashuj" target="_blank">
+github.com/satyashuj
+</a>
+</td>
+
+</tr>
+
+
+<tr>
+<td>🌐 Portfolio</td>
+<td>
+<a href="index.html">View Portfolio</a>
+</td>
+</tr>
+</table>
+
+</div>
+
+<a href="index.html" class="back">
+
+<span class="home">🏠</span>
+
+<span class="text">Back To Home</span>
+
+<span class="arrow">➜</span>
+
+</a>
+
+</body>
+</html>

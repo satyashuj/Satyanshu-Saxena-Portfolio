@@ -1,0 +1,424 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="icon" type="image/png" href="favicon.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | Satyanshu Saxena</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f8fafc;
+padding:40px;
+}
+
+/* Header */
+
+.gallery-header{
+background:linear-gradient(135deg,#ec4899,#a855f7);
+color:white;
+padding:50px;
+border-radius:25px;
+text-align:center;
+margin-bottom:50px;
+box-shadow:0 10px 25px rgba(168,85,247,0.3);
+}
+
+.gallery-header h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.gallery-header p{
+font-size:18px;
+opacity:.95;
+}
+
+/* Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+max-width:1300px;
+margin:auto;
+}
+
+.gallery-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:.4s;
+}
+
+.gallery-card:hover{
+transform:translateY(-10px);
+}
+
+.gallery-card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.gallery-card h3{
+padding:15px 15px 5px;
+font-size:24px;
+}
+
+.gallery-card p{
+padding:0 15px 20px;
+color:#475569;
+line-height:1.6;
+}
+
+/* Card Colors */
+
+.project{
+border-top:8px solid #f97316;
+}
+
+.voting{
+border-top:8px solid #2563eb;
+}
+
+.railway{
+border-top:8px solid #22c55e;
+}
+
+.certificate{
+border-top:8px solid #9333ea;
+}
+
+.internship{
+border-top:8px solid #ec4899;
+}
+
+.profile{
+border-top:8px solid #14b8a6;
+}
+
+/* Back Button */
+
+.back{
+display:block;
+width:220px;
+margin:50px auto;
+padding:14px;
+text-align:center;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+}
+.back{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+
+width:260px;
+margin:60px auto;
+
+padding:16px 25px;
+
+background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+color:#fff;
+
+text-decoration:none;
+
+font-size:22px;
+
+font-weight:700;
+
+border-radius:50px;
+
+box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+transition:.35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* Shine Effect */
+
+.back::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:80%;
+height:100%;
+
+background:rgba(255,255,255,.35);
+
+transform:skewX(-30deg);
+
+transition:.7s;
+
+}
+
+.back:hover::before{
+
+left:130%;
+
+}
+
+/* Hover */
+
+.back:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+box-shadow:0 15px 35px rgba(37,99,235,.45);
+
+background:linear-gradient(135deg,#1d4ed8,#4338ca);
+
+}
+
+/* Click Animation */
+
+.back:active{
+
+transform:scale(.94);
+
+animation:blink .3s;
+
+}
+
+/* Icon */
+
+.back span{
+
+font-size:26px;
+
+animation:move 2s infinite;
+
+}
+
+/* Icon Animation */
+
+@keyframes move{
+
+0%{transform:translateX(0);}
+50%{transform:translateX(-6px);}
+100%{transform:translateX(0);}
+
+}
+
+/* Blink */
+
+@keyframes blink{
+
+0%{opacity:1;}
+
+50%{opacity:.4;}
+
+100%{opacity:1;}
+
+}
+.back:hover{
+background:#1d4ed8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+body{
+padding:20px;
+}
+
+.gallery-header{
+padding:35px 20px;
+}
+
+.gallery-header h1{
+font-size:35px;
+}
+
+.gallery-card h3{
+font-size:20px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="gallery-header">
+
+<h1>📸 My Gallery</h1>
+
+<p>
+Projects, Certificates, Events & Professional Moments
+</p>
+
+</div>
+
+<div class="gallery">
+<div class="gallery-card certificate">
+
+<img src="certificate6.jpg" alt="SEBI Investor Certification">
+
+<h3>🏆 SEBI Investor Certification</h3>
+
+<p>
+Certified by NISM and SEBI after successfully completing and passing the SEBI Investor Certification Examination with demonstrated proficiency in financial literacy and investor protection concepts.
+</p>
+
+</div>
+
+<div class="gallery-card certificate">
+<img src="certificate1.jpg" alt="Java Certificate">
+
+<h3>🏆 Java Certification</h3>
+
+<p>
+Professional Java Technology Certificate.
+</p>
+
+</div>
+
+<div class="gallery-card internship">
+<img src="certificate2.jpg" alt="NSE Internship">
+
+<h3>💼 NSE Internship</h3>
+
+<p>
+National Stock Exchange of India Internship.
+</p>
+
+</div>
+
+<div class="gallery-card profile">
+<img src="SEBI.jpg" alt="Certificate">
+
+<h3>📈 SEBI Investor Awareness Certification</h3>
+
+<p>
+Demonstrated knowledge of financial literacy, investor awareness, securities markets and responsible investing practices through the NISM-SEBI Investor Awareness Test.
+</p>
+
+</div>
+
+<div class="gallery-card internship">
+
+<img src="WhatsApp Image 2026-06-24 at 10.46.24 PM (1).jpeg" alt="NSE Certificate">
+
+<h3>🏆 NSE Scam Awareness Certification</h3>
+
+<p>
+Awarded by National Stock Exchange of India (NSE) for successfully completing the ScamBush Master Quiz focused on cyber fraud prevention, scam awareness and financial security.
+</p>
+
+</div>
+
+<div class="gallery-card certificate">
+
+<img src="WhatsApp Image 2026-06-24 at 10.46.24 PM (2).jpeg" alt="Financial Literacy Certificate">
+
+<h3>🏆 Financial Literacy Quiz 2025</h3>
+
+<p>
+Participated in the National Financial Literacy Quiz 2025 conducted by NISM under the guidance of SEBI.
+</p>
+
+</div>
+
+<div class="gallery-card certificate">
+
+<img src="WhatsApp Image 2026-06-24 at 10.46.25 PM.jpeg" alt="NISM Certificate">
+
+<h3>🏛️ Social Stock Exchange Certification</h3>
+
+<p>
+Completed the NISM eLearning course on Social Stock Exchange and gained knowledge of social impact investing, fundraising and regulatory frameworks.
+</p>
+
+</div>
+
+<div class="gallery-card certificate">
+
+<img src="WhatsApp Image 2026-06-24 at 10.46.24 PM.jpeg" alt="NSE Scambuster Elite">
+
+<h3>🏆 NSE Scambuster Elite Certification</h3>
+
+<p>
+Recognized by NSE for excellence in cyber fraud awareness, scam detection and financial security practices through the Scambuster Elite Program.
+</p>
+
+</div>
+
+<div class="gallery-card certificate">
+
+<img src="images.png" alt="TCS iON Certificate">
+
+<h3>🏆 TCS iON AI & Cybersecurity Awareness</h3>
+
+<p>
+Earned certification in Artificial Intelligence and Cybersecurity Awareness through the AI for All program conducted by TCS iON, TCS Foundation and MPIT-CoE.
+</p>
+
+</div>
+
+<div class="gallery-card certificate">
+
+<img src="certificate8.jpg" alt="Generative AI Essentials Certificate">
+
+<h3>🚀 Generative AI Essentials</h3>
+
+<p>
+Earned certification in Generative Artificial Intelligence through the AI for All program conducted by TCS iON, TCS Foundation and MPIT-CoE, covering modern AI concepts and applications.
+</p>
+
+</div>
+
+<div class="gallery-card certificate">
+
+<img src="certificate9.jpg" alt="SEBI Samvad 2026 Certificate">
+
+<h3>🏛️ SEBI Samvad 2026</h3>
+
+<p>
+Certificate of Participation awarded by SEBI and NISM for attending
+Samvad 2026, a national symposium on Sustained Capital Formation,
+organized in association with NSE, BSE, NSDL and CDSL.
+</p>
+
+</div>
+
+</div>
+
+<a href="index.html" class="back">
+    <span>🏠</span>
+    Back To Home
+</a>
+</body>
+</html>
+

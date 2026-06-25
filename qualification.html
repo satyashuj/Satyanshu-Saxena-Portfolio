@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Qualification | Satyanshu Saxena</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f8fafc;
+padding:40px;
+}
+
+/* Header */
+
+.page-header{
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+padding:50px;
+border-radius:25px;
+text-align:center;
+margin-bottom:50px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.page-header h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.page-header p{
+font-size:18px;
+opacity:.9;
+}
+
+/* Qualification Grid */
+
+.qualification{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+/* Cards */
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:28px;
+}
+
+.card p{
+margin:8px 0;
+line-height:1.6;
+}
+
+/* Card Colors */
+
+.highschool{
+border-left:8px solid #3b82f6;
+}
+
+.intermediate{
+border-left:8px solid #22c55e;
+}
+
+.bsc{
+border-left:8px solid #f97316;
+}
+
+.pgdca{
+border-left:8px solid #a855f7;
+background:#faf5ff;
+}
+
+.pgdca h3{
+color:#9333ea;
+}
+.back-btn{
+
+width:300px;
+height:65px;
+
+margin:60px auto;
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+
+text-decoration:none;
+
+background:linear-gradient(135deg,#2563eb,#7c3aed,#ec4899);
+
+background-size:300% 300%;
+
+color:white;
+
+font-size:22px;
+font-weight:bold;
+
+border-radius:60px;
+
+box-shadow:
+0 12px 30px rgba(37,99,235,.35),
+0 0 30px rgba(124,58,237,.25);
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+
+animation:gradientMove 6s infinite;
+
+}
+
+/* Shine */
+
+.back-btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:60%;
+height:100%;
+
+background:rgba(255,255,255,.35);
+
+transform:skewX(-30deg);
+
+transition:.8s;
+
+}
+
+.back-btn:hover::before{
+
+left:150%;
+
+}
+
+/* Hover */
+
+.back-btn:hover{
+
+transform:translateY(-8px) scale(1.05);
+
+box-shadow:
+0 20px 40px rgba(37,99,235,.45),
+0 0 40px rgba(236,72,153,.45);
+
+}
+
+/* Click */
+
+.back-btn:active{
+
+transform:scale(.95);
+
+}
+
+/* Icon */
+
+.icon{
+
+font-size:30px;
+
+animation:homeBounce 2s infinite;
+
+}
+
+/* Arrow */
+
+.arrow{
+
+font-size:26px;
+
+transition:.3s;
+
+}
+
+.back-btn:hover .arrow{
+
+transform:translateX(8px);
+
+}
+
+/* Gradient Animation */
+
+@keyframes gradientMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+/* Home Animation */
+
+@keyframes homeBounce{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-6px);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.back-btn{
+
+width:250px;
+
+font-size:18px;
+
+height:55px;
+
+}
+
+.icon{
+
+font-size:24px;
+
+}
+
+.arrow{
+
+font-size:20px;
+
+}
+
+}
+
+/* Back Button */
+
+.back{
+display:block;
+width:220px;
+margin:50px auto 0;
+text-align:center;
+padding:14px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+transition:.3s;
+}
+
+.back:hover{
+background:#1d4ed8;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+body{
+padding:20px;
+}
+
+.page-header{
+padding:35px 20px;
+}
+
+.page-header h1{
+font-size:35px;
+}
+
+.card h3{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="page-header">
+
+<h1>🎓 My Qualification</h1>
+
+<p>
+Educational Background & Academic Journey
+</p>
+
+</div>
+
+<div class="qualification">
+
+<div class="card highschool">
+
+<h3>🏫 High School (10th)</h3>
+
+<p><strong>School:</strong> CH V S BH V Inter College, Auraiya</p>
+
+<p><strong>Board:</strong> UP Board</p>
+
+<p><strong>Year:</strong> 2015</p>
+
+<p><strong>Percentage:</strong> 70%</p>
+
+</div>
+
+<div class="card intermediate">
+
+<h3>📚 Intermediate (12th)</h3>
+
+<p><strong>School:</strong> STNGSIC Jainpur, Kanpur Dehat</p>
+
+<p><strong>Board:</strong> UP Board</p>
+
+<p><strong>Year:</strong> 2017</p>
+
+<p><strong>Percentage:</strong> 49%</p>
+
+</div>
+
+<div class="card bsc">
+
+<h3>🎓 Bachelor of Science (B.Sc)</h3>
+
+<p><strong>College:</strong> Kundan Lal Shukla Mahavidyalaya, Rania</p>
+
+<p><strong>University:</strong> CSJM University, Kanpur</p>
+
+<p><strong>Year:</strong> 2022</p>
+
+<p><strong>Percentage:</strong> 65%</p>
+
+</div>
+
+<div class="card pgdca">
+
+<h3>💻 PGDCA</h3>
+
+<p><strong>College:</strong> Government Polytechnic, Unnao</p>
+
+<p><strong>Board:</strong> BTEUP, Lucknow</p>
+
+<p><strong>Year:</strong> 2025</p>
+
+<p><strong>Percentage:</strong> 70%</p>
+
+</div>
+
+</div>
+
+<a href="index.html" class="back-btn">
+
+<span class="icon">🏠</span>
+
+<span class="text">Back To Home</span>
+
+<span class="arrow">➜</span>
+
+</a>
+
+</body>
+</html>
+

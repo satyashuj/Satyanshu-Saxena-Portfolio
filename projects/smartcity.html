@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/png" href="../favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart City Portal</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:#f8fafc;
+}
+
+.header{
+background:linear-gradient(135deg,#f97316,#fb923c);
+color:white;
+padding:60px;
+text-align:center;
+}
+
+.header h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.container{
+max-width:1200px;
+margin:40px auto;
+padding:35px;
+background:white;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.container img{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:15px;
+margin-bottom:30px;
+}
+
+h2{
+color:#f97316;
+margin:25px 0 15px;
+}
+
+p{
+font-size:18px;
+line-height:1.8;
+color:#555;
+}
+
+ul{
+margin-left:25px;
+}
+
+ul li{
+font-size:18px;
+margin-bottom:10px;
+}
+
+.tech{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:20px;
+}
+
+.tech span{
+background:#f97316;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:14px 30px;
+background:#f97316;
+color:white;
+text-decoration:none;
+border-radius:10px;
+font-size:18px;
+}
+.magic-btn{
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+width:340px;
+
+height:90px;
+
+margin:70px auto;
+
+text-decoration:none;
+
+border-radius:70px;
+
+overflow:hidden;
+
+background:#ffffff;
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.15);
+
+transition:.5s;
+
+}
+
+/* Rotating Ring */
+
+.ring{
+
+position:absolute;
+
+width:420px;
+
+height:420px;
+
+background:conic-gradient(
+
+#2563eb,
+
+#06b6d4,
+
+#7c3aed,
+
+#ec4899,
+
+#f97316,
+
+#22c55e,
+
+#2563eb
+
+);
+
+animation:rotateRing 6s linear infinite;
+
+}
+
+/* Inner White */
+
+.content{
+
+position:absolute;
+
+inset:4px;
+
+background:white;
+
+border-radius:65px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 25px;
+
+z-index:2;
+
+}
+
+/* Home */
+
+.home-icon{
+
+width:55px;
+
+height:55px;
+
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+color:white;
+
+transition:.4s;
+
+}
+
+/* Text */
+
+.text{
+
+text-align:left;
+
+}
+
+.small{
+
+font-size:13px;
+
+letter-spacing:3px;
+
+color:#64748b;
+
+text-transform:uppercase;
+
+}
+
+.text h3{
+
+font-size:25px;
+
+color:#1e293b;
+
+}
+
+/* Arrow */
+
+.arrow{
+
+width:55px;
+
+height:55px;
+
+background:#f1f5f9;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:28px;
+
+color:#2563eb;
+
+transition:.4s;
+
+}
+
+/* Hover */
+
+.magic-btn:hover{
+
+transform:translateY(-10px) scale(1.04);
+
+box-shadow:
+
+0 30px 60px rgba(37,99,235,.25);
+
+}
+
+.magic-btn:hover .home-icon{
+
+transform:rotate(-20deg) scale(1.15);
+
+}
+
+.magic-btn:hover .arrow{
+
+background:#2563eb;
+
+color:white;
+
+transform:translateX(8px);
+
+}
+
+/* Ring Animation */
+
+@keyframes rotateRing{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.magic-btn{
+
+width:290px;
+
+height:75px;
+
+}
+
+.text h3{
+
+font-size:20px;
+
+}
+
+.home-icon,
+
+.arrow{
+
+width:45px;
+
+height:45px;
+
+font-size:22px;
+
+}
+
+}
+.btn:hover{
+background:#ea580c;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>🏙 Smart City Portal</h1>
+
+<p>Java Web Application for Smart City Services</p>
+
+</div>
+
+<div class="container">
+
+<img src="../smartcity.jpg" alt="Smart City Portal">
+
+<h2>📌 Project Overview</h2>
+
+<p>
+
+Smart City Portal is a web-based citizen service platform developed using Java, JSP, Servlets, JDBC and MySQL. It provides online government services, complaint management, bill payment and scheme information through a modern user-friendly interface.
+
+</p>
+
+<h2>✨ Key Features</h2>
+
+<ul>
+
+<li>📝 Online Complaint Registration</li>
+
+<li>📊 Complaint Tracking System</li>
+
+<li>💡 Electricity Bill Payment</li>
+
+<li>🚰 Water Bill Payment</li>
+
+<li>🏛 Government Scheme Information</li>
+
+<li>📢 City News & Announcements</li>
+
+<li>👤 Citizen Registration & Login</li>
+
+<li>👨‍💼 Admin Dashboard</li>
+
+<li>📂 Complaint Management</li>
+
+<li>📈 Reports & Analytics</li>
+
+</ul>
+
+<h2>💻 Technologies Used</h2>
+
+<div class="tech">
+
+<span>Java</span>
+
+<span>JSP</span>
+
+<span>Servlet</span>
+
+<span>JDBC</span>
+
+<span>MySQL</span>
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+<span>Bootstrap</span>
+
+<span>Apache Tomcat</span>
+
+</div>
+
+<h2>🎯 Project Objective</h2>
+
+<p>
+
+The objective of this project is to digitize citizen services by providing a single online platform where users can access government services, register complaints, pay utility bills and stay informed about public schemes efficiently.
+
+</p>
+
+<h2>👨‍💻 Developed By</h2>
+
+<p>
+
+<strong>Satyanshu Saxena</strong><br>
+
+Java Full Stack Developer
+
+</p>
+
+<a href="../index.html" class="magic-btn">
+
+<div class="ring"></div>
+
+<div class="content">
+
+<div class="home-icon">🏠</div>
+
+<div class="text">
+
+<span class="small">Return</span>
+
+<h3>Portfolio</h3>
+
+</div>
+
+<div class="arrow">➜</div>
+
+</div>
+
+</a>
+
+</div>
+
+</body>
+</html>
