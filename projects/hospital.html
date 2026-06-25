@@ -333,6 +333,562 @@ font-size:22px;
 .btn:hover{
 background:#0e7490;
 }
+  /* ==========================================
+        RESPONSIVE DESIGN
+========================================== */
+
+/* Images */
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+/* Buttons */
+
+.btn,
+.project-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:14px 30px;
+border-radius:50px;
+text-decoration:none;
+transition:.4s;
+}
+
+/* Table */
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+/* ==========================================
+        4K & LARGE DESKTOP
+========================================== */
+
+@media (min-width:1600px){
+
+.container{
+width:1450px;
+margin:auto;
+}
+
+.hero h1{
+font-size:75px;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+.title{
+font-size:55px;
+}
+
+.hero img{
+width:320px;
+height:320px;
+}
+
+.projects,
+.gallery,
+.certificates,
+.qualification{
+grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+/* ==========================================
+        LAPTOP
+========================================== */
+
+@media (max-width:1200px){
+
+.container{
+width:95%;
+}
+
+.projects,
+.gallery,
+.certificates,
+.qualification{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero img{
+width:240px;
+height:240px;
+}
+
+}
+
+/* ==========================================
+        TABLET
+========================================== */
+
+@media (max-width:992px){
+
+header{
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+.logo{
+
+margin-bottom:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+.hero{
+
+padding:60px 20px;
+
+}
+
+.hero img{
+
+width:220px;
+
+height:220px;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.title{
+
+font-size:40px;
+
+}
+
+.projects,
+.gallery,
+.certificates,
+.qualification,
+.skills{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-container{
+
+flex-direction:column;
+
+}
+
+.contact-info,
+.contact-form{
+
+width:100%;
+
+}
+
+}
+
+/* ==========================================
+        MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+body{
+
+overflow-x:hidden;
+
+padding:0;
+
+}
+
+header{
+
+padding:15px;
+
+}
+
+.logo{
+
+font-size:28px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+.hero{
+
+padding:40px 20px;
+
+}
+
+.hero img{
+
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.title{
+
+font-size:30px;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+.card img{
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.projects,
+.gallery,
+.certificates,
+.qualification,
+.skills{
+
+display:grid;
+
+grid-template-columns:1fr;
+
+gap:20px;
+
+}
+
+.contact{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+.contact-info,
+.contact-form{
+
+width:100%;
+
+}
+
+input,
+textarea{
+
+width:100%;
+
+font-size:16px;
+
+padding:14px;
+
+}
+
+.btn,
+.project-btn{
+
+width:100%;
+
+}
+
+table{
+
+display:block;
+
+overflow-x:auto;
+
+white-space:nowrap;
+
+}
+
+}
+
+/* ==========================================
+        SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.logo{
+
+font-size:22px;
+
+}
+
+.hero img{
+
+width:150px;
+
+height:150px;
+
+}
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+.hero h2{
+
+font-size:18px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.title{
+
+font-size:26px;
+
+}
+
+.card{
+
+padding:15px;
+
+}
+
+.card h3{
+
+font-size:20px;
+
+}
+
+.card p{
+
+font-size:14px;
+
+}
+
+.card img{
+
+height:180px;
+
+}
+
+.btn,
+.project-btn{
+
+font-size:15px;
+
+padding:12px;
+
+}
+
+footer{
+
+padding:20px;
+
+font-size:14px;
+
+}
+
+}
+
+/* ==========================================
+        EXTRA SMALL DEVICE
+========================================== */
+
+@media (max-width:360px){
+
+.hero img{
+
+width:130px;
+
+height:130px;
+
+}
+
+.hero h1{
+
+font-size:24px;
+
+}
+
+.hero h2{
+
+font-size:17px;
+
+}
+
+.hero p{
+
+font-size:14px;
+
+}
+
+.title{
+
+font-size:22px;
+
+}
+
+.card{
+
+padding:12px;
+
+}
+
+.card h3{
+
+font-size:18px;
+
+}
+
+.card p{
+
+font-size:13px;
+
+}
+
+.btn,
+.project-btn{
+
+font-size:14px;
+
+padding:10px;
+
+}
+
+}
+
+/* ==========================================
+        HAMBURGER NAVBAR
+========================================== */
+
+@media(max-width:768px){
+
+.menu-toggle{
+
+display:block;
+
+cursor:pointer;
+
+font-size:28px;
+
+}
+
+nav ul{
+
+display:none;
+
+position:absolute;
+
+top:70px;
+
+right:20px;
+
+background:#fff;
+
+width:220px;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+z-index:999;
+
+}
+
+nav ul.active{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+}
+
+/* ==========================================
+        SMOOTH ANIMATION
+========================================== */
+
+*{
+
+scroll-behavior:smooth;
+
+transition:.3s;
+
+}
 
 </style>
 
