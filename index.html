@@ -411,25 +411,30 @@ background:#3b82f6;
 .btn4{
 background:#a855f7;
 }
+ 
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
 }
-
-.skill{
+ .skill{
 padding:20px;
 border-radius:15px;
-text-align:center;
-font-weight:bold;
 font-size:18px;
-transition:0.4s;
+font-weight:600;
+text-align:center;
+transition:.4s;
 cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .skill:hover{
 transform:translateY(-8px) scale(1.05);
 }
+
+
+
+
 
 /* Individual Colors */
 
@@ -514,20 +519,7 @@ font-size:18px;
 line-height:1.8;
 color:#475569;
 }
-.skill{
-padding:20px;
-border-radius:15px;
-font-size:18px;
-font-weight:600;
-text-align:center;
-transition:.4s;
-cursor:pointer;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
 
-.skill:hover{
-transform:translateY(-8px) scale(1.05);
-}
 /* Swing AI Assistant */
 
 .card6{
@@ -594,15 +586,7 @@ background:#dcfce7;
 color:#15803d;
 border:2px solid #22c55e;
 }
-.hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:140px 20px 80px;
-background:#dbeafe;
-}
+
 /* MSSQL */
 .mssql{
 background:#fee2e2;
@@ -617,7 +601,17 @@ color:#ea580c;
 border:2px solid #fb923c;
 }
 /* Projects */
-
+ .project-btn{
+display:block;
+margin:20px;
+margin-top:auto;
+padding:12px;
+text-align:center;
+text-decoration:none;
+color:white;
+border-radius:10px;
+font-weight:bold;
+}
 .projects{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
@@ -659,16 +653,9 @@ color:#555;
 min-height:90px;
 }
 
-.project-btn{
-display:block;
-margin:20px;
-padding:12px;
-text-align:center;
-text-decoration:none;
-color:#fff;
-border-radius:10px;
-font-weight:bold;
-}
+
+
+
 .card img{
 width:100%;
 height:300px;
@@ -734,7 +721,7 @@ border:2px solid #818cf8;
 color:#2563eb;
 font-weight:bold;
 }
-/* Responsive */
+
 
 /* Contact */
 
@@ -819,17 +806,7 @@ outline:none;
 .contact-form textarea:focus{
 border:2px solid #2563eb;
 }
-.project-btn{
-display:block;
-margin:20px;
-margin-top:auto;
-padding:12px;
-text-align:center;
-text-decoration:none;
-color:white;
-border-radius:10px;
-font-weight:bold;
-}/* Hospital Card */
+/* Hospital Card */
 
 .card5{
 background:#ecfeff;
@@ -906,7 +883,7 @@ font-size:30px;
 }
 
 
-
+/* Responsive */
 
 /* ================= DESKTOP ================= */
 
